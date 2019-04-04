@@ -1,5 +1,4 @@
-$path = Join-Path $demosPath 'Demos & Exercises\11_Monitoring\01_Resources'
-Test-Path $path
+$path = (Get-Item .).FullName
 
 $resourceGroupName = '{myapp name made up by you}'
 #$resourceGroupName = 'fooservice'
