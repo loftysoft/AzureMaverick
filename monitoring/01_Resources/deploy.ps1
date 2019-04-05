@@ -1,4 +1,7 @@
+<#
 $path = (Get-Item .).FullName
+#>
+$exercisePath = Join-Path $path 'monitoring\01_Resources'
 
 $resourceGroupName = '{myapp name made up by you}'
 #$resourceGroupName = 'fooservice'
@@ -21,16 +24,16 @@ $params = @{
 $resourceGroup = New-AzResourceGroup @params -Verbose -Force
 
 # Deploy
-$templateFile = Get-Item (Join-Path $path 'azuredeploy.json')
-$templateParameterFile = Get-Item (Join-Path $path 'azuredeploy.parameters.json')
+$templateFile = Get-Item (Join-Path $exercisePath 'azuredeploy.json')
+$templateParameterFile = Get-Item (Join-Path $exercisePath 'azuredeploy.parameters.json')
 $params = @{
   ResourceGroupName     = $resourceGroup.ResourceGroupName
   TemplateFile          = $templateFile.FullName
   TemplateParameterFile = $templateParameterFile
+  adminPassword         = Read-Host -Prompt 'Enter a VM admin password' -AsSecureString
 }
 #Test-AzResourceGroupDeployment @params -Verbose
 New-AzResourceGroupDeployment @params -Verbose -Force -Mode Complete
 
-return
-
-Remove-ResourceGroup $resourceGroupName
+# When the deployment succeeds to got the Azure Portal to your Resource Group to ensure everything was deployed:
+explorer.exe "https://portal.azure.com/#resource/subscriptions/$((Get-AzContext).Subscription.Id)/resourceGroups/$($resourceGroup.ResourceGroupName)/overview"
