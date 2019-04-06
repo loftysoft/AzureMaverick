@@ -26,11 +26,12 @@ $resourceGroup = New-AzResourceGroup @params -Verbose -Force
 # Deploy
 $templateFile = Get-Item (Join-Path $exercisePath 'azuredeploy.json')
 $templateParameterFile = Get-Item (Join-Path $exercisePath 'azuredeploy.parameters.json')
+$adminPassword = Read-Host -Prompt 'Enter a VM admin password' -AsSecureString
 $params = @{
   ResourceGroupName     = $resourceGroup.ResourceGroupName
   TemplateFile          = $templateFile.FullName
   TemplateParameterFile = $templateParameterFile
-  adminPassword         = Read-Host -Prompt 'Enter a VM admin password' -AsSecureString
+  adminPassword         = $adminPassword
 }
 #Test-AzResourceGroupDeployment @params -Verbose
 New-AzResourceGroupDeployment @params -Verbose -Force -Mode Complete
