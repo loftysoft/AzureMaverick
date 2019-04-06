@@ -7,7 +7,6 @@ namespace Loftysoft.Demo.Web
 		public static void RegisterGlobalFilters(GlobalFilterCollection filters)
 		{
 			filters.Add(new HandleErrorAttribute());
-			filters.Add(new AiHandleErrorAttribute());
 		}
 	}
 }

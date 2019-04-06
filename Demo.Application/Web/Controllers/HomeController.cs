@@ -26,7 +26,7 @@ namespace Loftysoft.Demo.Web.Controllers
         public async Task<ActionResult> Index()
         {
             var indexTimer = Stopwatch.StartNew();
-			//TelemetryClient.TrackMetric("Calls To Home", 1);
+        		//TelemetryClient.TrackMetric("Calls To Home", 1);
 
 			if (Request.QueryString.HasKeys())
 			{
@@ -50,7 +50,6 @@ namespace Loftysoft.Demo.Web.Controllers
 
 			await messageRepository.AddMessageAsync(name, message, Request.UserHostAddress);
 
-			// ReSharper disable once PossibleNullReferenceException
 			var responseUrl = Request.Url.AbsoluteUri.Split('?').First();
 			return Redirect($"{responseUrl}?{Query.MessageKey}={Query.MessageSentValue}");
 		}
