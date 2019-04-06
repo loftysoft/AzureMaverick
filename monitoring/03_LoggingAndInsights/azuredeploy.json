@@ -8,8 +8,9 @@
     }
   },
   "variables": {
-    "logsName": "[concat(parameters('resourceName'), 'logs')]",
-    "appInsightsName": "[concat(parameters('resourceName'), 'ai')]"
+    "sufix": "[uniqueString(resourceGroup().id)]",
+    "appInsightsName": "[concat(parameters('resourceName'), 'ai', variables('sufix'))]",
+    "logsName": "[concat(parameters('resourceName'), 'la', variables('sufix'))]"
   },
   "resources": [
     {
