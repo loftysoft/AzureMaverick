@@ -32,45 +32,7 @@
         "sku": {
           "name": "Standalone"
         }
-      },
-      "resources": [
-        {
-          "apiVersion": "2015-11-01-preview",
-          "location": "[resourceGroup().location]",
-          "name": "[concat('ServiceMap', '(', variables('logsName'), ')')]",
-          "type": "Microsoft.OperationsManagement/solutions",
-          "dependsOn": [
-            "[concat('Microsoft.OperationalInsights/workspaces/', variables('logsName'))]"
-          ],
-          "properties": {
-            "workspaceResourceId": "[resourceId('Microsoft.OperationalInsights/workspaces/', variables('logsName'))]"
-          },
-          "plan": {
-            "name": "[concat('ServiceMap', '(', variables('logsName'),')')]",
-            "publisher": "Microsoft",
-            "product": "[Concat('OMSGallery/', 'ServiceMap')]",
-            "promotionCode": ""
-          }
-        },
-        {
-          "apiVersion": "2015-11-01-preview",
-          "location": "[resourceGroup().location]",
-          "name": "[concat('InfrastructureInsights', '(', variables('logsName'), ')')]",
-          "type": "Microsoft.OperationsManagement/solutions",
-          "dependsOn": [
-            "[concat('Microsoft.OperationalInsights/workspaces/', variables('logsName'))]"
-          ],
-          "properties": {
-            "workspaceResourceId": "[resourceId('Microsoft.OperationalInsights/workspaces/', variables('logsName'))]"
-          },
-          "plan": {
-            "name": "[concat('InfrastructureInsights', '(', variables('logsName'), ')')]",
-            "publisher": "Microsoft",
-            "product": "[Concat('OMSGallery/', 'InfrastructureInsights')]",
-            "promotionCode": ""
-          }
-        }
-      ]
+      }
     }
   ],
   "outputs": {
