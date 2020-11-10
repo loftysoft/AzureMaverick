@@ -1,8 +1,0 @@
-C:\Code\AzureMaverick\Demo.Application\Instrumented\Tests\bin\Debug\Loftysoft.Demo.Tests.dll
-C:\Code\AzureMaverick\Demo.Application\Instrumented\Tests\bin\Debug\Loftysoft.Demo.Tests.pdb
-C:\Code\AzureMaverick\Demo.Application\Instrumented\Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Code\AzureMaverick\Demo.Application\Instrumented\Tests\obj\Debug\Loftysoft.Demo.Tests.csprojAssemblyReference.cache
-C:\Code\AzureMaverick\Demo.Application\Instrumented\Tests\obj\Debug\Loftysoft.Demo.Tests.csproj.CoreCompileInputs.cache
-C:\Code\AzureMaverick\Demo.Application\Instrumented\Tests\obj\Debug\Loftysoft.Demo.Tests.csproj.CopyComplete
-C:\Code\AzureMaverick\Demo.Application\Instrumented\Tests\obj\Debug\Loftysoft.Demo.Tests.dll
-C:\Code\AzureMaverick\Demo.Application\Instrumented\Tests\obj\Debug\Loftysoft.Demo.Tests.pdb

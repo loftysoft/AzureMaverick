@@ -1,6 +1,0 @@
-C:\Code\AzureMaverick\Demo.Application\Instrumented\Contracts\bin\Release\Loftysoft.Demo.Contracts.dll
-C:\Code\AzureMaverick\Demo.Application\Instrumented\Contracts\bin\Release\Loftysoft.Demo.Contracts.pdb
-C:\Code\AzureMaverick\Demo.Application\Instrumented\Contracts\obj\Release\Loftysoft.Demo.Contracts.csprojAssemblyReference.cache
-C:\Code\AzureMaverick\Demo.Application\Instrumented\Contracts\obj\Release\Loftysoft.Demo.Contracts.csproj.CoreCompileInputs.cache
-C:\Code\AzureMaverick\Demo.Application\Instrumented\Contracts\obj\Release\Loftysoft.Demo.Contracts.dll
-C:\Code\AzureMaverick\Demo.Application\Instrumented\Contracts\obj\Release\Loftysoft.Demo.Contracts.pdb

@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="WebMessageContext-Web.config Connection String" description="WebMessageContext Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:sunet.database.windows.net,1433;Data Source=sunet.database.windows.net;Initial Catalog=DemoTest;Persist Security Info=False;User ID=Demo;Password=Malm0Rulez!;Pooling=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Code\\AzureMaverick\\Demo\.Application\\Instrumented\\Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='WebMessageContext']/@connectionString" />
-  </parameter>
-</parameters>
