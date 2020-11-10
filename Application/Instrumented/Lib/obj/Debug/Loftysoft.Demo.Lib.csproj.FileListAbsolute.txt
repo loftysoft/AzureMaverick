@@ -1,0 +1,12 @@
+C:\Code\AzureMaverick\Demo.Application\Instrumented\Lib\bin\Debug\Loftysoft.Demo.Lib.dll.config
+C:\Code\AzureMaverick\Demo.Application\Instrumented\Lib\bin\Debug\Loftysoft.Demo.Lib.dll
+C:\Code\AzureMaverick\Demo.Application\Instrumented\Lib\bin\Debug\Loftysoft.Demo.Lib.pdb
+C:\Code\AzureMaverick\Demo.Application\Instrumented\Lib\bin\Debug\Loftysoft.Demo.Contracts.dll
+C:\Code\AzureMaverick\Demo.Application\Instrumented\Lib\bin\Debug\StructureMap.dll
+C:\Code\AzureMaverick\Demo.Application\Instrumented\Lib\bin\Debug\Loftysoft.Demo.Contracts.pdb
+C:\Code\AzureMaverick\Demo.Application\Instrumented\Lib\bin\Debug\StructureMap.xml
+C:\Code\AzureMaverick\Demo.Application\Instrumented\Lib\obj\Debug\Loftysoft.Demo.Lib.csprojAssemblyReference.cache
+C:\Code\AzureMaverick\Demo.Application\Instrumented\Lib\obj\Debug\Loftysoft.Demo.Lib.csproj.CoreCompileInputs.cache
+C:\Code\AzureMaverick\Demo.Application\Instrumented\Lib\obj\Debug\Loftysoft.Demo.Lib.csproj.CopyComplete
+C:\Code\AzureMaverick\Demo.Application\Instrumented\Lib\obj\Debug\Loftysoft.Demo.Lib.dll
+C:\Code\AzureMaverick\Demo.Application\Instrumented\Lib\obj\Debug\Loftysoft.Demo.Lib.pdb
