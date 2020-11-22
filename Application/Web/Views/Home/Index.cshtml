@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Loftysoft Demo";
+
+    var pageMessage = ViewBag.PageMessage;
+}
+
+<div class="jumbotron">
+    <h1>Application Insights Demo</h1>
+    <p class="lead">Send a message to Magnus telemetry data below:</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        @if (!string.IsNullOrEmpty(pageMessage))
+        {
+            <div>@pageMessage</div>
+        }
+
+        @using (Html.BeginForm())
+        {
+            <div>@Html.TextBox("Name") &lt;- Name</div>
+            <div>@Html.TextBox("Message") &lt;- Message</div>
+            <div>
+                <button type="submit">Send</button>
+            </div>}
+    </div>
+</div>
